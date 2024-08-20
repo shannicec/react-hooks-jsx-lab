@@ -14,6 +14,7 @@ test("the <div> has three child elements", () => {
   const { container } = render(<About />);
 
   const about = container.querySelector("#about");
+  console.log(about.children);
   expect(about.children).toHaveLength(3);
 });
 
